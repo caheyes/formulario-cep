@@ -1,0 +1,65 @@
+.o-address {
+  max-width: 460px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 12px;
+
+    input {
+      border-radius: 4px;
+      border: 1px solid var(--white);
+      padding: 15px;
+      -webkit-box-shadow: 0 4px 8px rgba(30, 60, 90, .1);
+      box-shadow: 0 4px 8px rgba(30, 60, 90, .1);
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      font-size: 1rem;
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      margin-bottom: 15px;
+      width: 100%;
+
+      &:hover, 
+      &:focus {
+        outline: none;
+        box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+        border-color: var(--primary);
+      }
+    }
+
+    &__ctn-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      grid-column: 2;
+      button {
+        width: 300px;
+        background: var(--primary);
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(30, 60, 90, .2);
+        transition: all .3s;
+        border: none;
+  
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        cursor: pointer;
+        color: var(--white);
+        text-align: center;
+        font-size: 1rem;
+  
+        padding: 10px 30px;
+        margin: 10px auto 0 auto;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

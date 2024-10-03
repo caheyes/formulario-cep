@@ -1,0 +1,23 @@
+<section class="o-address">
+  <h1 class="o-address__title">Consulte Seu Cep</h1>
+  <form action="" class="o-address__form">
+    <label for="cep">Cep</label>
+    <input type="text" id="cep" (input)="onCepChange(cep.value)" #cep>
+
+    <label for="road">Rua</label>
+    <input type="text" id="road" [value]="endereco.road" name="road">
+
+    <label for="neighborhood">Bairro</label>
+    <input type="text" id="neighborhood" [value]="endereco.neighborhood" name="neighborhood">
+
+    <label for="city">Cidade</label>
+    <input type="text" id="city" [value]="endereco.city" name="city">
+
+    <label for="state">Estado</label>
+    <input type="text" id="state" [value]="endereco.state" name="state">
+
+    <div class="o-address__form__ctn-btn">
+      <button (click)="clear()">Limpar</button>
+    </div>
+  </form>
+</section>
